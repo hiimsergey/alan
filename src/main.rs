@@ -4,6 +4,7 @@ use clap::Parser;
 #[derive(Parser)]
 #[command(author, version)]
 #[command(arg_required_else_help(true))]
+/// A simple Enigma-like string encryption/decryption algorithm
 struct Args {
     /// Encryption/decryption key
     #[arg(value_name = "KEY")]
